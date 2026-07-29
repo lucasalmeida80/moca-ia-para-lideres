@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ivory:#FDFAF7;
+    --porcelain:#F2ECE9;
+    --ink:#2D2623;
+    --oxblood:#5A2E2D;
+    --walnut:#6B4D3E;
+    --taupe:#A48D7A;
+    --verdigris:#4D6B65;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    width:1200px;
+    height:630px;
+    font-family:'Inter',sans-serif;
+    background:var(--ivory);
+    color:var(--ink);
+    position:relative;
+    overflow:hidden;
+  }
+  .accent-bar{
+    position:absolute;
+    left:0;top:0;bottom:0;
+    width:14px;
+    background:var(--oxblood);
+  }
+  .card{
+    position:absolute;
+    inset:0;
+    padding:70px 90px 64px 104px;
+    display:flex;
+    flex-direction:column;
+  }
+  .logo{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    font-size:40px;
+    color:var(--ink);
+  }
+  .logo .dot{color:var(--oxblood);}
+  .badge{
+    display:inline-block;
+    align-self:flex-start;
+    font-size:19px;
+    font-weight:600;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    color:var(--oxblood);
+    border-top:2px solid var(--walnut);
+    border-bottom:2px solid var(--walnut);
+    padding:10px 0;
+    margin-top:56px;
+  }
+  h1{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    font-size:78px;
+    line-height:1.14;
+    color:var(--ink);
+    margin-top:30px;
+    max-width:960px;
+  }
+  .sub{
+    font-size:27px;
+    color:var(--walnut);
+    margin-top:24px;
+    max-width:860px;
+    line-height:1.45;
+  }
+  .facts{
+    margin-top:auto;
+    display:flex;
+    gap:14px;
+    align-items:center;
+    font-size:21px;
+    font-weight:600;
+    letter-spacing:2.5px;
+    text-transform:uppercase;
+    color:var(--walnut);
+  }
+  .facts .sep{color:var(--taupe);}
+</style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="card">
+    <div class="logo">MoCa<span class="dot">.</span></div>
+    <div class="badge">Educação Executiva · Turma 2026</div>
+    <h1>Inteligência Artificial para&nbsp;Líderes</h1>
+    <div class="sub">Você não vem aprender IA. Você vem resolver problemas reais, com curadoria e mediação da MoCa.</div>
+    <div class="facts">
+      <span>São Paulo</span><span class="sep">·</span>
+      <span>21 de agosto de 2026</span><span class="sep">·</span>
+      <span>Até 15 vagas</span>
+    </div>
+  </div>
+</body>
+</html>
